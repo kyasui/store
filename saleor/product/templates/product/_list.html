@@ -1,0 +1,7 @@
+{% load mptt_tags %}
+
+{% recursetree products %}
+    <li>
+        <a href="{{ node.get_absolute_url }}">{{ node }}</a>
+    </li>
+{% endrecursetree %}
